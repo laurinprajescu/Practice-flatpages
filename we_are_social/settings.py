@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-SITE_ID = 2
+# SITE_ID = 2
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -54,9 +54,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# # MIDDLEWARE_CLASSES = (
-# #     'django.middleware.security.SecurityMiddleware',
-# #     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+# MIDDLEWARE_CLASSES = (
+#     'django.middleware.security.SecurityMiddleware',
+#     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 # )
 
 ROOT_URLCONF = 'we_are_social.urls'
