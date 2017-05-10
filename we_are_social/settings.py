@@ -31,6 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 SITE_ID = 3
 
+SITE_URL = 'http://127.0.0.1:8000'
+PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
+PAYPAL_RECEIVER_EMAIL = 'laurinprajescu-facilitator@gmail.com'
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,6 +45,9 @@ INSTALLED_APPS = [
     'hello.apps.HelloConfig',
     'django.contrib.sites',
     'django.contrib.flatpages',
+    'paypal.standard.ipn',
+    'paypal_store',
+    'products',
 ]
 
 MIDDLEWARE = [
