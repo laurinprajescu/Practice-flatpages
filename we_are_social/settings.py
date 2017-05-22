@@ -48,9 +48,20 @@ INSTALLED_APPS = [
     'paypal.standard.ipn',
     'paypal_store',
     'products',
+    'debug_toolbar',
+    'tinymce',
+    'emoticons',
+    'disqus',
+    'reusable_blog',
+    # 'home',
+    # 'accounts',
+    # 'magazines',
 ]
 
+INTERNAL_IPS = ('127.0.0.1',)
+
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -136,3 +147,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = ''
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),  # static directory at the project level
+)
+
+# tinymce settings
+TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", 'js', 'tinymce', 'tinymce.min.js')
