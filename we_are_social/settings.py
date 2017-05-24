@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'tinymce',
     'emoticons',
     'disqus',
-    'reusable_blog',
+    # 'reusable_blog',
     # 'home',
     # 'accounts',
     # 'magazines',
